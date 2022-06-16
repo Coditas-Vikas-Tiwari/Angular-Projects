@@ -1,0 +1,22 @@
+.bookmarks-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bookmark-tiles-container {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.add-btn i {
+    margin-right: 0.25rem;
+    margin-left: -0.25rem;
+}
+
+.manage-btn i {
+    margin-right: 0.5rem;
+    opacity: 0.9;
+}
