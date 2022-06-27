@@ -1,0 +1,7 @@
+<main class="main">
+ 
+    <app-person [personList]="friendList" (changeStatus)="changeStatus($event)" class="person-list"></app-person>
+
+    <app-person [personList]="nonFriendList" (changeStatus)="changeStatus($event)" class="person-list"></app-person>
+
+</main>

@@ -1,0 +1,7 @@
+<main class="main">
+    <section class="person-list">
+      <div class="list" *ngFor="let people of personList">
+        <p (click)="changeFriendStatus(people)" class="people-name">{{people.name}} </p>
+      </div>
+    </section>
+  
