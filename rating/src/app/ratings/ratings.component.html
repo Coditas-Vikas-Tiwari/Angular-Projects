@@ -1,0 +1,9 @@
+<section rating-bar>
+    <form  [formGroup]="form" (ngSubmit)="onSubmit(form)" class="rating-input">
+        <app-dropdown class="dropdown" label = "ambience" formControlName="ambience"></app-dropdown>
+        <app-dropdown class="dropdown"  label = "cleanliness"  formControlName="cleanlines"></app-dropdown>
+        <app-dropdown class="dropdown"  label = "service"  formControlName="service"></app-dropdown>
+        <app-dropdown class="dropdown"  label = "food"  formControlName="food"></app-dropdown>
+        <input type="submit" class="submit">
+    </form>
+</section>

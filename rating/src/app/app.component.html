@@ -1,0 +1,10 @@
+<main class="main">
+  <app-ratings (options)="getOptions($event)"></app-ratings>
+
+<div>
+  <app-display></app-display>
+  <ng-container *ngFor="let item of displayOptionObject">
+   <app-rating-card [optionObject]="item"></app-rating-card>
+  </ng-container>
+</div>
+</main>
