@@ -1,0 +1,14 @@
+<section class="signup-container">
+    <form  [formGroup]="form" (ngSubmit)="onSubmit(form)" class="signUp">
+        <input type="text" name="" id="" class="input"  formControlName="name" placeholder="Enter Your Name">
+        <input type="email" name="" id="" class="input" formControlName="email" placeholder="Enter Your Email">
+        <input type="password" name="" id="" class="input" formControlName="password" placeholder="Enter Your Password">
+        <input type="submit" value="Sign In" class="signin-btn">
+       
+        </form>
+  <section class="alreadysigned">
+    <span>do you have account? click below to login</span>
+    <button (click)="goToLogin()" class="gotologin">Login</button>
+  </section>
+        
+</section>

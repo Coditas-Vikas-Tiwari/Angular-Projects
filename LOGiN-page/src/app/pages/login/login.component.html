@@ -1,0 +1,7 @@
+<section class="login-container">
+    <form  [formGroup]="form" (ngSubmit)="onSubmit(form)" class="login">
+        <input type="email" name="" id="" class="input" formControlName="email" placeholder="Enter Your Email">
+        <input type="password" class="input" formControlName="password" placeholder="Enter Your Password">
+        <input type="submit" value="Login" class="login-btn">
+    </form>
+</section>
