@@ -1,4 +1,4 @@
 <app-signup (signedUp)="checkUserSignedUp($event)" *ngIf="!isSigned"></app-signup>
 
-<app-login *ngIf=" !isLogIn && isSigned" (loggedIn)="checkUserLogIn($event)"></app-login>
+<app-login *ngIf=" isSigned && !isLogIn" (loggedIn)="checkUserLogIn($event)"></app-login>
 <app-loggedin *ngIf="isLogIn"></app-loggedin>

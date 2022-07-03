@@ -37,6 +37,8 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    margin: 0.5rem;
+    
     background-color: #333399;
     color: white;
     border: none;
@@ -46,4 +48,12 @@
 .gotologin {
     width: 60px;
     align-self: center;
+    background-color: black;
+    color: yellow;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.gotologin:active {
+    color: black;
+    background-color: yellow;
 }
