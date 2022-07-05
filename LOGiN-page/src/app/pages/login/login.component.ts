@@ -7,7 +7,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { HttpService } from 'src/app/services/service';
-import { ILogin, IResult } from 'src/app/types';
+import { ILogin, IResult, IUserDetails } from 'src/app/types';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   checkUserEmail!: string;
   checkUserPassword!: string;
   isLogIn: boolean = false;
-  result!: IResult;
+  result!: string;
   token!: IResult;
 
   @Output() loggedIn = new EventEmitter();

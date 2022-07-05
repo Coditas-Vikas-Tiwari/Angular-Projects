@@ -8,19 +8,24 @@ import { HttpService } from 'src/app/services/service';
   styleUrls: ['./loggedin.component.scss'],
 })
 export class LoggedinComponent implements OnInit {
-  li!: any;
-  lis: ITable[] = [];
-  constructor(private http: HttpService, private http1: HttpClient) {}
+  responseData:any
+  responseDataArray: ITable[] = [];
+  constructor(private http: HttpService, private httpclient: HttpClient) {}
   validateToken: string = this.http.AccessToken;
   ngOnInit(): void {
     if (this.validateToken) {
-      this.http1
+      this.httpclient
         .get('http://www.mocky.io/v2/5ea172973100002d001eeada')
         .subscribe((Response) => {
-          console.log(Response);
-          this.li = Response;
-          this.lis = this.li.list;
+       
+          this.responseData = Response;
+          console.log(this.responseData);
+          this.responseDataArray = this.responseData.list;
         });
+    }
+    else{
+      alert('Token is not Valid');
+      
     }
   }
 }

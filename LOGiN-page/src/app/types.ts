@@ -20,14 +20,22 @@ export interface ISignup {
 
 export interface ILogin {
     email:string,
-    password:string
+    password:string,
 }
 
+export interface IUserDetails{
+    data: IResult
+}
 export interface IResult {
+
 name:string,
 role:string,
 token:string,
 tokenExpiry:string,
 userId:string
-    
+}
+
+export interface IResponse{
+
+    list:[ITable]
 }

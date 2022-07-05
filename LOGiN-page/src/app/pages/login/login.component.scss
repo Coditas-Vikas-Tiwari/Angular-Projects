@@ -3,13 +3,17 @@
     border: 1px solid black;
     box-shadow: 2px 2px 2px 2px black;
     border-radius: 8px;
+
 }
 
 .login {
     display: flex;
-    flex-direction: column;
+   width: 200px;
+   flex-direction: column;
+   justify-content: space-between;
+
     border-radius: 8px;
-    padding: 4rem;
+    padding: 10rem 4rem;
     background-color: #778BA5;
 }
 .input {
@@ -17,6 +21,7 @@
     background-color: 	#3a3b3c;
     color: white;
     height: 30px;
+    align-self: space-between;
 }
 
 .login-btn{
