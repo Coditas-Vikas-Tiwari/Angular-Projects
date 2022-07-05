@@ -8,20 +8,25 @@ import { InputComponent } from './shared/input/input.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { HomeComponent } from './pages/home/home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { CustomStyleDirective } from './custom-style.directive';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InputComponent,
     ButtonComponent,
-    HomeComponent
+    HomeComponent,
+    CustomStyleDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

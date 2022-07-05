@@ -13,7 +13,7 @@
               
             <app-input class="input-field" type="password" label = "password" placeholder="Enter Password"  formControlName="password"  ></app-input>
             <span *ngIf=" form.get('password')!.hasError('minlength')">* Password is required and should be valid</span>
-            <button mat-button class="form-submit-btn" [disabled]="!form.valid">Login</button>
+            <app-button  [form] = "form">Login</app-button>
          
             </form>
         </div>
